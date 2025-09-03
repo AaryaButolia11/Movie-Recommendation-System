@@ -1,4 +1,4 @@
-🎬 Movie Recommender System
+###🎬 Movie Recommender System
 A content-based movie recommender system built with Python and Streamlit. This application suggests movies similar to a user's choice based on a variety of features, including genre, keywords, cast, and crew. The recommendation engine uses a cosine similarity model built on the TMDB 5000 Movie Dataset.
 
 🚀 Features
