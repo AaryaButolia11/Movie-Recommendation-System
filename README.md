@@ -1,7 +1,21 @@
 # 🎬 Movie Recommender System
 A content-based movie recommender system built with Python and Streamlit. This application suggests movies similar to a user's choice based on a variety of features, including genre, keywords, cast, and crew. The recommendation engine uses a cosine similarity model built on the TMDB 5000 Movie Dataset.
 
+
+## 🚀 Model Working
+
+### Bag of Words
+The "Bag of Words" (BoW) model is a simplifying representation used in natural language processing and information retrieval. In this notebook, the BoW model is implemented using CountVectorizer from the scikit-learn library. It works by creating a vocabulary of all unique words from the movie's textual features (like the overview, genres, keywords, cast, and crew). Each movie is then represented as a vector, where each element in the vector corresponds to a word in the vocabulary, and its value is the number of times that word appears in the movie's text. The order of the words is disregarded, hence the term "bag of words."
+
+### Vectorization
+Vectorization is the process of converting text into a numerical format that a machine learning model can understand. In this notebook, the CountVectorizer is used to perform vectorization. After creating a combined string of text for each movie that includes its overview, genres, keywords, and information about the cast and crew, the CountVectorizer transforms this text into a matrix. Each row of the matrix corresponds to a movie, and each column corresponds to a unique word in the entire corpus of movie descriptions. The values in the matrix are the counts of each word in each movie's combined text.
+
+### Cosine Similarity
+After vectorizing the text data, the notebook uses cosine similarity to measure the similarity between movies. Cosine similarity is a metric used to determine how similar two vectors are, irrespective of their size. It calculates the cosine of the angle between two vectors. A cosine value of 1 means the two vectors are identical, 0 means they are unrelated, and -1 means they are opposites. In this context, the closer the cosine similarity score is to 1, the more similar the movies are in terms of their content. The recommender system uses this similarity score to find the movies that are most similar to a given movie and then suggests them as recommendations.
+
+
 ## 🚀 Features
+
 
 🧠 Content-Based Filtering: Recommends movies by analyzing shared attributes like genre, cast, director, and plot keywords.
 
