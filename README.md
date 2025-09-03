@@ -1,7 +1,8 @@
-### 🎬 Movie Recommender System
+# 🎬 Movie Recommender System
 A content-based movie recommender system built with Python and Streamlit. This application suggests movies similar to a user's choice based on a variety of features, including genre, keywords, cast, and crew. The recommendation engine uses a cosine similarity model built on the TMDB 5000 Movie Dataset.
 
-🚀 Features
+## 🚀 Features
+
 🧠 Content-Based Filtering: Recommends movies by analyzing shared attributes like genre, cast, director, and plot keywords.
 
 🌐 Interactive Web UI: A clean and simple user interface built with Streamlit that allows users to select a movie and instantly get recommendations.
@@ -10,7 +11,8 @@ A content-based movie recommender system built with Python and Streamlit. This a
 
 ⚡ Fast & Efficient: Pre-computes the similarity matrix, allowing for near-instantaneous recommendations once the app is running.
 
-🛠 Tech Stack
+## 🛠 Tech Stack
+
 👨‍💻 Backend & Core Logic
 <br>
 Python 3.x
@@ -39,9 +41,15 @@ TMDB 5000 Movie Dataset – A static dataset from Kaggle containing metadata for
 <br>
 HTML/CSS (via Streamlit) – Streamlit handles the frontend rendering, allowing for rapid UI development in Python.
 
-📸 Demo Screenshots
-Main Interface
-Getting Recommendations
+## 📸 Demo Screenshots
+
+<img width="1918" height="985" alt="image" src="https://github.com/user-attachments/assets/902a9771-0cd9-45c0-a18b-657a7ba3b251" />
+<img width="1918" height="983" alt="image" src="https://github.com/user-attachments/assets/0b95a19e-70a8-4510-842e-6d776026d378" />
+<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/381ca8c7-1d12-4f4f-9cb3-66d3973a1356" />
+
+
+
+## Getting Recommendations
 ⚙️ Setup and Installation
 1. Clone the Repository
 git clone [https://github.com/your-username/movie-recommender-system.git](https://github.com/your-username/movie-recommender-system.git)
@@ -56,7 +64,7 @@ Go to your account Settings → API and copy your API Key.
 
 Open the app.py file and paste your key into the fetch_poster function, replacing the placeholder key.
 
-# In app.py
+## In app.py
 def fetch_poster(movie_id):
     url = "[https://api.themoviedb.org/3/movie/](https://api.themoviedb.org/3/movie/){}?api_key=YOUR_API_KEY_HERE&language=en-US".format(movie_id)
     # ... rest of the function
