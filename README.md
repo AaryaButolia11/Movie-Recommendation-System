@@ -4,6 +4,9 @@ A content-based movie recommender system built with Python and Streamlit. This a
 
 ## 🚀 Model Working
 
+<img width="2166" height="1302" alt="Model workflow - visual selection" src="https://github.com/user-attachments/assets/5f43a370-74bb-44fb-a4af-21b73c91c742" />
+
+
 ### Bag of Words
 The "Bag of Words" (BoW) model is a simplifying representation used in natural language processing and information retrieval. In this notebook, the BoW model is implemented using CountVectorizer from the scikit-learn library. It works by creating a vocabulary of all unique words from the movie's textual features (like the overview, genres, keywords, cast, and crew). Each movie is then represented as a vector, where each element in the vector corresponds to a word in the vocabulary, and its value is the number of times that word appears in the movie's text. The order of the words is disregarded, hence the term "bag of words."
 
